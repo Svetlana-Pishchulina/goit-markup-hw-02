@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hometask1</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,9 +17,9 @@
         <a class="logo" href="">Web<span>Studio</span></a>
         <!--навигация-сайта-->
         <ul class="nav-list">
-            <li><a href="">студия</a></li>
-            <li><a href="">портфолио</a></li>
-            <li><a href="">контакты</a></li>
+            <li><a class="link current" href="./index.html">студия</a></li>
+            <li><a class="link" href="./portfolio.html">портфолио</a></li>
+            <li><a class="link" href="./contacts.html">контакты</a></li>
         </ul>
         </nav>
         <!--контакты-->
@@ -26,17 +27,13 @@
             <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-       <!--<address>--> 
-            <!-- <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+380961111111">+38 096 111 11 11</a> -->
-        <!--</address>--> 
-    </header>
+       </header>
 
     <main>
         <!--баннер-->
         <section class="hero">
             <h1>эффективные решения <br> для вашего бизнеса</h1>
-            <a href="">заказать услугу</a>
+            <button class="button" type="button">заказать услугу</button>
         </section>
  
         <!--Особенности-->
@@ -105,12 +102,9 @@
         <a class="logo" href="">Web<span>Studio</span></a>
         <!--адрес-->
         <address>
-            <p>г. Киев, пр-т Леси Украинки, 26 <br>
-            <a href="mailto:info@example.com">info@example.com</a> <br>
-            <a href="tel:+380991111111">+38 099 111 11 11</a></p>
-            <!-- <p>г. Киев, пр-т Леси Украинки, 26</p> 
-            <a href="mailto:info@example.com">info@example.com</a> 
-            <a href="tel:+380991111111">+38 099 111 11 11</a> -->
+            <p class="map">г. Киев, пр-т Леси Украинки, 26</p>
+            <p><a class="link" href="mailto:info@example.com">info@example.com</a> </p>
+            <p><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></p>
         </address>
     </footer>
 </body>
