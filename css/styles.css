@@ -1,13 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --accent-color-2: #ffffff;
   --background-color: #2f303a;
+  --logo-color: #000;
+  --background-color-2: #f5f4fa;
+  --address-color: #fff;
+  --address-color-2: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -20,7 +30,7 @@ a {
 
 .logo {
   color: var(--accent-color);
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -28,7 +38,7 @@ a {
 }
 
 .logo span {
-  color: #000;
+  color: var(--logo-color);
 }
 
 footer .logo span {
@@ -44,10 +54,7 @@ footer .logo span {
 }
 
 .nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--accent-color);
-}
-
+.nav-list .link:focus,
 .nav-list .link.current {
   color: var(--accent-color);
 }
@@ -80,7 +87,7 @@ footer .logo span {
 
 .button {
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--background-color-2);
 }
 
 .button:hover,
@@ -93,7 +100,7 @@ footer .logo span {
 
 .features h3 {
   color: var(--title-text-color);
-  font-size: 14;
+  font-size: 14px;
   letter-spacing: 0.42px;
   font-weight: 700;
   text-transform: uppercase;
@@ -125,7 +132,7 @@ footer .logo span {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-2);
   text-align: center;
 }
 
@@ -161,7 +168,7 @@ footer {
 }
 
 .map {
-  color: #fff;
+  color: var(--address-color);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -175,7 +182,7 @@ address .link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color-2);
 }
 
 /* Portfolio */
